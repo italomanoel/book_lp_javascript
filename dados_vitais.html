@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+  function pulaLinha(){
+    document.write( "<br> <hr> <br>");
+  }
+  function mostra(frase){
+    document.write("<big>" + frase + "</big>");
+      pulaLinha();
+  }
+  function calculaDiasDeVida(idade){
+      var diasDeVida = idade * 365;
+      return diasDeVida; //se não houver o return ele ficará indefinido.
+  }
+  function calculaBatimentos(diassDeVida){
+    var numeroBatimentos = diassDeVida * 24 * 60 * 80;
+    return numeroBatimentos;
+  } //os nomes diasDeVida são apenas semelhantes dentro das funções. Pode trocar um deles por "diassDeVida"
+  var idadeUsuario = prompt("Qual a sua idade?");
+  var dias = calculaDiasDeVida(idadeUsuario);
+  var batimentos = calculaBatimentos(dias);
+
+  mostra(" Você já viveu " + dias + " dias de vida");
+  mostra("Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+</script>

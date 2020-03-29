@@ -1,0 +1,19 @@
+<script>
+function mostra(frase){
+    document.write(frase + "<br>");
+}   
+//o prompt manda uma string
+var anoDeCopa = parseInt(prompt("Informe o ano inicial"));//1930;
+var anoLimite = parseInt(prompt("Qual é o ano limite? "));
+
+if(isNaN(anoDeCopa || anoLimite )){
+    mostra("Apenas números são válidos.")
+} else {
+    while(anoDeCopa <= anoLimite){
+        mostra(anoDeCopa + " tem copa! ");
+        anoDeCopa = anoDeCopa + 4;        
+    }
+    mostra("Ufa! Esses foram os anos de copa até " + (anoDeCopa - 4));
+}
+
+</script>

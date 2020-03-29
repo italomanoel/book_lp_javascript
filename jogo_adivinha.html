@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<script>
+    function pulaLinha(){
+        document.write( "<br> <hr> <br>");
+    }
+    function mostra(frase){
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }
+    var numeroPensadoComCasasDecimais = Math.random() * 100; //número gerado de 0 a 100
+    var numeroPensado = Math.round(numeroPensadoComCasasDecimais); //arredondando o número
+    /*outra forma: var numeroPensado = Math.round( Math.random() * 100);*/
+    
+    var chute = prompt("Qual número acha que pensei: ");
+    if(chute == numeroPensado){
+        mostra("Você acertou o número pensado, que era " + numeroPensado);
+    } else { /* else if(chute != numeroPensado) {}*/
+        mostra("Você errou, o número era " + numeroPensado);
+    }
+    function sorteia(numeroLimite){
+        prompt(numeroLimite)
+        return Math.round(Math.random() * numeroLimite);
+    }
+
+</script>

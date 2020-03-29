@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<h3>Álcool e gasolina</h3>
+<script>
+    var tanque_litros = 40;
+    var caminho_percorrido_g = 480;
+    var caminho_percorrido_a = 300;
+    var consumo_gasolina = caminho_percorrido_g/tanque_litros;
+    var consumo_alcool  = caminho_percorrido_a/tanque_litros;
+    var preco_gasolina = 2.90;
+    var preco_alcool = 2.40;
+    var preco_consumo_g = consumo_gasolina * preco_gasolina;
+    var preco_consumo_a = consumo_alcool * preco_alcool;
+    var numero = 0.324567
+
+    document.write("O consumo de gasolina foi: " + consumo_gasolina + " litros.<br>");
+    document.write("O consumo de álcool foi: " + consumo_alcool + " litros.<br>");
+    document.write("O preço da gasolina foi: R$" + preco_consumo_g.toFixed(2) + ".<br>");
+    document.write("O preço do álcool foi: R$" + preco_consumo_a.toFixed(2) + ".<br>");
+    document.write("arrendodando os números: " + Math.round(numero) + " e "
+      + numero.toFixed(2));
+
+
+</script>

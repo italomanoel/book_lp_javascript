@@ -1,0 +1,30 @@
+<meta charset="utf-8">
+<script>
+    function pulaLinha(){
+        document.write( "<br> <hr> <br>");
+    }
+    function mostra(frase){
+        document.write("<big>" + frase + "</big>");
+        pulaLinha();
+    }  
+    
+    var numeroPensado = sorteia(10);
+    var chute = prompt("Qual número acha que pensei entre 0 e 10: ");
+
+    function sorteia(n){
+       return Math.round(Math.random() * n);
+    }
+    if(isNaN(chute)){ //NaN significa 'Not a Number'
+        mostra("Apenas números são válidos.")
+    }
+    if(chute == numeroPensado){
+        mostra("Você acertou o número pensado, que era " + numeroPensado);
+    }else if(numeroPensado > chute) {
+        mostra("Você errou, o número que você pensou é menor que o número pensado. " + numeroPensado)
+    }else if(numeroPensado < chute) {
+        mostra("o número que você pensou é maior que o número pensado. " + numeroPensado)
+    } 
+
+    
+
+</script>

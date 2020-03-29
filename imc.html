@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<script>
+  function pulaLinha() {
+    document.write("<br> <hr> <br>");
+  }
+  function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+  }
+  function calculaIMC(altura, peso) {
+    var imc = peso/ (altura * altura);
+    //mostra ("IMC calculado é " + imc.toFixed(2));
+    return Math.round(imc);
+  }
+  
+  var pesoDoUsuario = prompt("E o seu peso");
+  var alturaDoUsuario = prompt("Bom dia! Qual é a sua altura?");
+  var imcDoUsuario = calculaIMC(alturaDoUsuario, pesoDoUsuario);
+  var pesoDoPrimo = 83;
+  var alturaDoPrimo = 1.76;
+  var imcDoPrimo = calculaIMC(alturaDoPrimo, pesoDoPrimo);
+
+  mostra("O seu imc é " + imcDoUsuario);
+
+  if(imcDoUsuario > 18.5) {
+    if(imcDoUsuario < 35) {
+    mostra("Ok! Seu IMC está entre os dois limites. ");
+    }
+  }
+  //ou pode colocar o && ao invés de um if dentro de outro, exemplo:
+  if(imcDoUsuario >= 18.5 && imcDoUsuario <= 35) {
+    mostra("Ok! Seu IMC está entre os dois limites 2.");
+  }
+  if(imcDoUsuario > 35) {
+    mostra("Seu IMC indica que você está ACIMA do peso. ");
+  }
+
+  mostra("O imc do meu primo é " + imcDoPrimo);
+  mostra("Ele ainda está " + (imcDoPrimo - 18.5) + " pontos acima do limite de magreza.");
+  //calculaIMC(alturaDoPrimo, pesoDoPrimo);
+
+  /*var peso = 75;
+    var altura = 1.72;
+    var imc = peso / (altura * altura);
+    mostra("meu IMC é: " + Math.round(imc) + " ou " + imc.toFixed(2)); */
+
+</script>

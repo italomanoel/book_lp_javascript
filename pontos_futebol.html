@@ -1,0 +1,53 @@
+<meta charset="utf-8">
+<script type="text/javascript">
+  function pulaLinha() {
+    document.write("<br> <hr> <br>");
+  }
+  function mostra(frase) {
+    document.write("<big>" + frase + "</big>");
+    pulaLinha();
+  }
+function calculaPontos(vitorias, empates, derrotas) {
+  return ((vitorias * 3) + empates) - derrotas;
+}
+
+  var vitorias_cdc = parseInt( prompt("Quantos jogos o CDC Futebol Clube venceu? "));
+  var empates_cdc = parseInt( prompt ("Quantos jogos o CDC Futebol Clube empatou? "));
+  var derrotas_cdc = parseInt( prompt ("Quantos derrotas?"));
+  var pontos_cdc = calculaPontos(vitorias_cdc, empates_cdc, derrotas_cdc);
+  var vitorias_adversario = parseInt( prompt ("Quantos jogos o Livros Velhos venceu? "));
+  var empates_adversario = parseInt( prompt ("Quantos jogos o Livros Velhos empatou? "));
+  var derrotas_adversario = parseInt( prompt ("Quantas derrotas tem Livros Velhor?"));
+  var pontos_adversario = calculaPontos(vitorias_adversario,empates_adversario,derrotas_adversario);
+  
+  mostra("Nosso time tem " + pontos_cdc + " pontos.");
+  if (pontos_cdc > pontos_adversario) {
+    mostra("Nosso time está indo melhor que o Livros Velhos! ");
+  } if (pontos_cdc == pontos_adversario) {
+    mostra("Nosso time está empatado com os Livros Velhos! ");
+  } if (pontos_cdc < pontos_adversario) {
+    mostra("Nosso time está indo pior que os Livros Velhos");
+  }
+
+  /*
+      //isso é sem a função calculaPontos, apenas com a pulaLinnha e a mostra
+  var vitorias = prompt ("Quantos jogos o CDC Futebol Clube venceu? ");
+    //pode colocar o parseInt no prompt ficando: parseInt(prompt ("Quantos jogos o CDC Futebol Clube empatou? "));
+  var empates = parseInt(prompt ("Quantos jogos o CDC Futebol Clube empatou? "));
+  var pontos = (vitorias * 3) + empates;  //pode transformar em int aqui, mas para ficar como o livro deixar a forma acima.
+
+  var vitorias_adversario = parseInt( prompt ("Quantos jogos o Livros Velhos venceu? "));
+  var empates_adversario = parseInt( prompt ("Quantos jogos o Livros Velhos empatou? "));
+  var pontos = (vitorias_adversario * 3) + empates_adversario;
+
+  mostra( "Nosso time tem " + pontos + " pontos!");
+
+  if(pontos > 28) {
+    mostra("Nosso time está indo melhor que o Livros Velhos!");
+  } if (pontos == 28) {
+    mostra("Nosso time impatou com os Livros Velhos");
+  } if {
+    mostra("Nosso time está indo pior que os Livros Velhos");
+  }
+*/
+</script>
