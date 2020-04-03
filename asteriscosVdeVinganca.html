@@ -1,0 +1,17 @@
+<meta charset="UTF-8"> 
+<script>
+    //feita com o auxílio do https://groups.google.com/forum/#!topic/comece-a-programar/YeZQs_hWfg4 . Obrigado.
+    var tamanho = parseInt( prompt("Qual tamanho do V de Vingança?"));
+    var baseDoV = tamanho * 2 - 1;
+
+    for (var linha = 1; linha <= tamanho; linha++) {
+        for (var coluna = 1; coluna <= baseDoV; coluna++) {
+            if (coluna == linha || coluna + linha == baseDoV + 1) {
+                document.write("*");
+            } else {
+                document.write("_");
+            }
+        }
+        document.write("<br>");
+    }
+</script>
