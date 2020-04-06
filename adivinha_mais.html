@@ -3,7 +3,7 @@
 <input type="submit" id="adivinhar" value="Compare com o número que estou pensando!"> 
 <script>
 
-    var segredo = 8;
+    var segredo = Math.round(Math.random() * 10);
     var caixaDoNumero = document.getElementById("numero");
     var botaoAdivinhar = document.getElementById("adivinhar");
     botaoAdivinhar.onclick = botaoClicado;
@@ -14,5 +14,7 @@
         } else {
             alert("Infelizmente você errou!");
         }
+
+        caixaDoNumero.value = ""; //limpa a caixa.
     }
 </script>
