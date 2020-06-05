@@ -10,12 +10,12 @@
     function botaoClicado() {
         for (var i = 0; i < segredos.length; i++) {
             if(segredos[i] == caixaDoNumero.value) {
-                alert("Parabéns! Você acertou o " + segredos[i] +  " número!");
+                alert("Parabéns! Você acertou o número " + segredos[i] +  " Uhu!");
                 caixaDoNumero.value = "";
                 return;
             }
         }
         alert("Infelizmente você errou!");
-        caixaDoNumero.value = "";
+        caixaDoNumero.value = ""; //colocar vazio na caixa 
     }
 </script>
