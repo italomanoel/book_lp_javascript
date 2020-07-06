@@ -12,7 +12,7 @@
             if(segredos[i] == caixaDoNumero.value) {
                 alert("Parabéns! Você acertou o número " + segredos[i] +  " Uhu!");
                 caixaDoNumero.value = "";
-                return;
+                return; //caso não haja o 'return' o código irá prosseguir quando acertar mostrando o 'alert' que errou também.
             }
         }
         alert("Infelizmente você errou!");
