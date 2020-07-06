@@ -5,10 +5,17 @@
     var sorteados = [];
     var botao = document.getElementById("verificar");
     botao.onclick = adicionarSorteado;
+
     function adicionarSorteado() {
         var numero = document.getElementById("numero").value;
+        for(var i = 0; i < sorteados.length; i = i + 1) {
+            if(sorteados[i] == numero) {
+                alert("Número já sorteado!");
+                return;
+            }
+        }
         sorteados.push(numero);
         console.log(sorteados);
-        alert("Número adicionado ao Bingo!");
+        alert("Número " + sorteados[i] + " adicionado ao Bingo!");
     }
 </script>
