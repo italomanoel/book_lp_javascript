@@ -1,0 +1,29 @@
+<meta charset="utf-8">
+
+<canvas id = "tela" width="600" height="400"></canvas>
+<canvas id = "telas" width="800" height="600"></canvas>
+<script>
+    let tela = document.getElementById("tela");
+    let pincel = tela.getContext("2d");
+    pincel.fillStyle="green";
+    pincel.fillRect(0,0,200,400);
+    pincel.fillStyle="red";
+    pincel.fillRect(400,0,200,400);
+    pincel.fillStyle="gray";
+    pincel.beginPath();
+    pincel.moveTo(300,200);
+    pincel.lineTo(200,400);
+    pincel.lineTo(400,400);
+    pincel.fill();
+    pincel.fillStyle="blue";
+    pincel.beginPath();
+    pincel.arc(300, 100, 50, 0, 2*Math.PI);
+    pincel.fill();    
+
+    let telas = document.getElementById("telas");
+    let pinceladas = telas.getContext("2d");
+
+    pinceladas.fillStyle = "green";
+    pinceladas.fillRect(0,60,700, 500);
+    //o fillRect recebe quatro números para pintar um retângulo. Sendo posição X e Y e altura e largura.
+</script>
