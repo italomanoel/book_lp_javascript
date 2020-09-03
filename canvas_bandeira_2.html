@@ -1,5 +1,15 @@
 <meta charset="utf-8">    
 <canvas id="bandeira" width="600" height="400"></canvas>
 <script>
-    let bandeira = document.getElementById("");
+    let bandeira = document.getElementById("bandeira");
+    let bandeiraMadagascar = bandeira.getContext("2d");
+
+    bandeiraMadagascar.fillStyle = "white";
+    bandeiraMadagascar.fillRect(0,0, 200, 400);
+
+    bandeiraMadagascar.fillStyle = "red";
+    bandeiraMadagascar.fillRect(200,0,400,200);
+
+    bandeiraMadagascar.fillStyle = "green";
+    bandeiraMadagascar.fillRect(200,200,400,200);
 </script>

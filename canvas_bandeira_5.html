@@ -1,0 +1,46 @@
+<meta charset="utf-8">
+
+<canvas id="bandeira" width="600" height="400"></canvas>
+<canvas id="bandeira2" width="600" height="400"></canvas>
+<script>
+    let bandeira = document.getElementById("bandeira");
+    let bandeiraNoruega = bandeira.getContext("2d");
+    let bandeira2 = document.getElementById("bandeira2");
+    let bandeiraNoruega2 = bandeira2.getContext("2d");
+    //-------------Primeira bandeira
+        //preenchimento quadro vermelho
+    bandeiraNoruega.fillStyle = "red";
+    bandeiraNoruega.fillRect(0,0, 600, 400);
+        //linha branca vertical
+    bandeiraNoruega.fillStyle = "white";
+    bandeiraNoruega.fillRect(140,0, 100, 400);
+        //linha branca horizontal
+    bandeiraNoruega.fillStyle = "white";
+    bandeiraNoruega.fillRect(0, 150, 600, 100);
+        //linha azul vertical
+    bandeiraNoruega.fillStyle = "navy";
+    bandeiraNoruega.fillRect(165, 0, 50, 400);
+        //linha azul horizontal
+    bandeiraNoruega.fillStyle = "navy";
+    bandeiraNoruega.fillRect(0, 175, 600, 50); 
+    //-------------/Primeira bandeira
+
+    bandeiraNoruega2.fillStyle = "red";
+    bandeiraNoruega2.fillRect(0, 50, 140, 140);
+
+    bandeiraNoruega2.fillStyle = "red";
+    bandeiraNoruega2.fillRect(0, 270, 140, 140);
+
+    bandeiraNoruega2.fillStyle = "red";
+    bandeiraNoruega2.fillRect(245, 50, 600, 140);
+
+    bandeiraNoruega2.fillStyle = "red";
+    bandeiraNoruega2.fillRect(245, 270, 600, 140);
+
+    bandeiraNoruega2.fillStyle = "navy";
+    bandeiraNoruega2.fillRect(165, 50, 50, 400);
+
+    bandeiraNoruega2.fillStyle = "navy";
+    bandeiraNoruega2.fillRect(0, 205, 600, 50);
+
+</script>

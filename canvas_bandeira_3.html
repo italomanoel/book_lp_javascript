@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<canvas id="bandeira" width="600" height="400"></canvas>
+
+<script>
+    let bandeira = document.getElementById("bandeira");
+    let bandeiraLaos = bandeira.getContext("2d");
+
+    bandeiraLaos.fillStyle = "red";
+    bandeiraLaos.fillRect(0,0,600,400);
+
+    bandeiraLaos.fillStyle = "navy";
+    bandeiraLaos.fillRect(0,100, 600, 200);
+
+    bandeiraLaos.fillStyle = "white";
+    bandeiraLaos.beginPath();
+    bandeiraLaos.arc(300,200, 80, 0, 2 * Math.PI);
+    bandeiraLaos.fill();
+
+    bandei
+</script>

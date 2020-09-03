@@ -1,0 +1,22 @@
+<meta charset = "utf-8">
+
+<canvas id="bandeira" width="800" height="600"></canvas>
+
+<script>
+    let bandeira = document.getElementById("bandeira");
+    let bandeiraNiger = bandeira.getContext("2d");
+
+    bandeiraNiger.fillStyle = "red";
+    bandeiraNiger.fillRect(0,0,800,200);
+
+    bandeiraNiger.fillStyle = "white";
+    bandeiraNiger.fillRect(0,200,800,200);
+
+    bandeiraNiger.fillStyle = "green";
+    bandeiraNiger.fillRect(0,400,800,200);
+
+    bandeiraNiger.fillStyle = "red";
+    bandeiraNiger.beginPath();
+    bandeiraNiger.arc(400, 300, 80, 0, 2*Math.PI);
+    bandeiraNiger.fill();
+</script>
