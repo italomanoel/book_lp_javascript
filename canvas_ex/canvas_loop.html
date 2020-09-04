@@ -12,8 +12,20 @@
         pincel.strokeRect(x,y, 50, 50);
     }
 
+    function desenhaQuadradoVermelho(x,y){
+        let tela = document.getElementById("tela");
+        let pincel = tela.getContext("2d");
+
+        pincel.fillStyle = "red";
+        pincel.fillRect(x,y,50,50);
+        pincel.fillStyle = "black";
+        pincel.strokeRect(x,y,50,50);
+    }
+
     for(let x = 0; x < 600; x = x + 50) {
         desenhaQuadradoVerde(x,0);
+        desenhaQuadradoVermelho(x, 50);
     }
+    
     
 </script>
