@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+<canvas id="bandeira" width="600" height="400"></canvas>
+<script>
+    let bandeira = document.getElementById("bandeira");
+    let bandeiraBrasil = bandeira.getContext("2d");
+
+    bandeiraBrasil.fillStyle = "green";
+    bandeiraBrasil.fillRect(0,0,600,400);
+
+    bandeiraBrasil.fillStyle = "yellow";
+    bandeiraBrasil.beginPath();
+    bandeiraBrasil.moveTo(300,20);
+    bandeiraBrasil.lineTo(50, 200);
+    bandeiraBrasil.lineTo(300,380);
+    bandeiraBrasil.lineTo(550,200);
+    bandeiraBrasil.fill();
+
+    bandeiraBrasil.fillStyle = "navy";
+    bandeiraBrasil.beginPath();
+    bandeiraBrasil.arc(300,200,100,0,2*Math.PI);
+    bandeiraBrasil.fill();
+
+    bandeiraBrasil.fillStyle = "white";
+    bandeiraBrasil.fillRect(204,190, 190, 20);
+
+</script>
